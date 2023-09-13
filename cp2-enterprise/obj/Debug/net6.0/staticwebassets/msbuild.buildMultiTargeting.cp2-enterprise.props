@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\cp2-enterprise.props" />
+</Project>

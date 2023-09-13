@@ -1,20 +1,36 @@
-﻿namespace cp2_enterprise.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace cp2_enterprise.Models
 {
     public class AutoEscola
     {
+        [Key]
         public int Id { get; set; }
 
+        [Required]
         public string? Nome { get; set; }
 
-        // relacionamento com Aluno
+        public virtual ICollection<Aluno> Alunos { get; set; }
+
         // relacionamento com Funcionario
         // relacionamento com Veiculo
 
+        [Required]
         public string? CEP { get; set; }
-        public string? Logradouro { get; set; } 
+
+        [Required]
+        public string? Logradouro { get; set; }
+
+        [Required]
         public string? Numero { get; set; }
+
+        [Required]
         public string? Bairro { get; set; }
+
+        [Required]
         public string? Cidade { get; set; }
+
+        [Required]
         public string? Estado { get; set; }
 
 
