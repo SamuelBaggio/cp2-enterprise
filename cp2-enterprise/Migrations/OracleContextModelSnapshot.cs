@@ -30,8 +30,12 @@ namespace cp2_enterprise.Migrations
 
                     OraclePropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("Categoria")
+                    b.Property<int?>("AutoEscolaId")
                         .HasColumnType("NUMBER(10)");
+
+                    b.Property<string>("Categoria")
+                        .IsRequired()
+                        .HasColumnType("NVARCHAR2(2000)");
 
                     b.Property<string>("Cpf")
                         .IsRequired()
@@ -48,10 +52,13 @@ namespace cp2_enterprise.Migrations
                         .IsRequired()
                         .HasColumnType("NVARCHAR2(2000)");
 
-                    b.Property<int>("Sexo")
-                        .HasColumnType("NUMBER(10)");
+                    b.Property<string>("Sexo")
+                        .IsRequired()
+                        .HasColumnType("NVARCHAR2(2000)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("AutoEscolaId");
 
                     b.ToTable("Alunos");
                 });
@@ -125,31 +132,6 @@ namespace cp2_enterprise.Migrations
                     b.ToTable("Comentarios");
                 });
 
-            modelBuilder.Entity("cp2_enterprise.Models.Funcionario", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("NUMBER(10)");
-
-                    OraclePropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Cargo")
-                        .IsRequired()
-                        .HasColumnType("NVARCHAR2(2000)");
-
-                    b.Property<string>("Cpf")
-                        .IsRequired()
-                        .HasColumnType("NVARCHAR2(2000)");
-
-                    b.Property<string>("Nome")
-                        .IsRequired()
-                        .HasColumnType("NVARCHAR2(2000)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Funcionarios");
-                });
-
             modelBuilder.Entity("cp2_enterprise.Models.Veiculo", b =>
                 {
                     b.Property<int>("Id")
@@ -161,8 +143,9 @@ namespace cp2_enterprise.Migrations
                     b.Property<int>("Ano")
                         .HasColumnType("NUMBER(10)");
 
-                    b.Property<int>("Categoria")
-                        .HasColumnType("NUMBER(10)");
+                    b.Property<string>("Categoria")
+                        .IsRequired()
+                        .HasColumnType("NVARCHAR2(2000)");
 
                     b.Property<string>("Modelo")
                         .IsRequired()
@@ -175,6 +158,18 @@ namespace cp2_enterprise.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Veiculos");
+                });
+
+            modelBuilder.Entity("cp2_enterprise.Models.Aluno", b =>
+                {
+                    b.HasOne("cp2_enterprise.Models.AutoEscola", null)
+                        .WithMany("Alunos")
+                        .HasForeignKey("AutoEscolaId");
+                });
+
+            modelBuilder.Entity("cp2_enterprise.Models.AutoEscola", b =>
+                {
+                    b.Navigation("Alunos");
                 });
 #pragma warning restore 612, 618
         }

@@ -1,4 +1,5 @@
 ﻿using cp2_enterprise.Models.Enum;
+using Microsoft.VisualBasic;
 using System.ComponentModel.DataAnnotations;
 
 namespace cp2_enterprise.Models
@@ -15,7 +16,7 @@ namespace cp2_enterprise.Models
         public DateTime DataNascimento { get; set; }
 
         [Required]
-        public SexoEnum Sexo { get; set; }
+        public string? Sexo { get; set; }
 
         [Required]
         public string? Cpf { get; set; }
@@ -24,7 +25,7 @@ namespace cp2_enterprise.Models
         public string? Renach { get; set; }
 
         [Required]
-        public CategoriaEnum Categoria { get; set; }
+        public string? Categoria { get; set; }
 
     }
 }

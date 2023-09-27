@@ -17,7 +17,5 @@ namespace cp2_enterprise.Models
         [Required]
         public int Ano { get; set; }
 
-        [Required]
-        public CategoriaEnum Categoria { get; set; }
     }
 }

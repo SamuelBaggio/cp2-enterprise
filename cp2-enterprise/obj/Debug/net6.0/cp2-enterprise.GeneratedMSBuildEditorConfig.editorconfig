@@ -16,6 +16,46 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\logonrmlocal\Source\Repos\cp2-enterprise\cp2-enterprise
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/logonrmlocal/Source/Repos/cp2-enterprise/cp2-enterprise/Views/Alunos/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1bm9zXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/logonrmlocal/Source/Repos/cp2-enterprise/cp2-enterprise/Views/Alunos/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1bm9zXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/logonrmlocal/Source/Repos/cp2-enterprise/cp2-enterprise/Views/Alunos/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1bm9zXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/logonrmlocal/Source/Repos/cp2-enterprise/cp2-enterprise/Views/Alunos/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1bm9zXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/logonrmlocal/Source/Repos/cp2-enterprise/cp2-enterprise/Views/Alunos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1bm9zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/logonrmlocal/Source/Repos/cp2-enterprise/cp2-enterprise/Views/AutoEscolas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0b0VzY29sYXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/logonrmlocal/Source/Repos/cp2-enterprise/cp2-enterprise/Views/AutoEscolas/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0b0VzY29sYXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/logonrmlocal/Source/Repos/cp2-enterprise/cp2-enterprise/Views/AutoEscolas/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0b0VzY29sYXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/logonrmlocal/Source/Repos/cp2-enterprise/cp2-enterprise/Views/AutoEscolas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0b0VzY29sYXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/logonrmlocal/Source/Repos/cp2-enterprise/cp2-enterprise/Views/AutoEscolas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0b0VzY29sYXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/logonrmlocal/Source/Repos/cp2-enterprise/cp2-enterprise/Views/Comentarios/Comentarios.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tZW50YXJpb3NcQ29tZW50YXJpb3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -44,10 +84,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/logonrmlocal/Source/Repos/cp2-enterprise/cp2-enterprise/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/logonrmlocal/Source/Repos/cp2-enterprise/cp2-enterprise/Views/Home/teste.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVx0ZXN0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -58,6 +94,26 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/logonrmlocal/Source/Repos/cp2-enterprise/cp2-enterprise/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/logonrmlocal/Source/Repos/cp2-enterprise/cp2-enterprise/Views/Veiculoes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVpY3Vsb2VzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/logonrmlocal/Source/Repos/cp2-enterprise/cp2-enterprise/Views/Veiculoes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVpY3Vsb2VzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/logonrmlocal/Source/Repos/cp2-enterprise/cp2-enterprise/Views/Veiculoes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVpY3Vsb2VzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/logonrmlocal/Source/Repos/cp2-enterprise/cp2-enterprise/Views/Veiculoes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVpY3Vsb2VzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/logonrmlocal/Source/Repos/cp2-enterprise/cp2-enterprise/Views/Veiculoes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVpY3Vsb2VzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/logonrmlocal/Source/Repos/cp2-enterprise/cp2-enterprise/Views/_ViewImports.cshtml]

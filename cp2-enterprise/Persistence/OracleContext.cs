@@ -8,7 +8,6 @@ namespace cp2_enterprise.Persistence
 
         public DbSet<Comentarios> Comentarios { get; set; }
         public DbSet<Aluno> Alunos { get; set; }
-        public DbSet<Funcionario> Funcionarios { get; set; }
         public DbSet<AutoEscola> AutoEscolas { get; set; }
         public DbSet<Veiculo> Veiculos { get; set; }
 
