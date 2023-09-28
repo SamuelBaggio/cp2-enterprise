@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Oracle.EntityFrameworkCore.Metadata;
 using cp2_enterprise.Persistence;
@@ -11,9 +12,11 @@ using cp2_enterprise.Persistence;
 namespace cp2_enterprise.Migrations
 {
     [DbContext(typeof(OracleContext))]
-    partial class OracleContextModelSnapshot : ModelSnapshot
+    [Migration("20230928113207_Mod-veiculov4")]
+    partial class Modveiculov4
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -29,6 +32,9 @@ namespace cp2_enterprise.Migrations
                         .HasColumnType("NUMBER(10)");
 
                     OraclePropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int?>("AutoEscolaId")
+                        .HasColumnType("NUMBER(10)");
 
                     b.Property<string>("Categoria")
                         .IsRequired()
@@ -54,6 +60,8 @@ namespace cp2_enterprise.Migrations
                         .HasColumnType("NVARCHAR2(2000)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("AutoEscolaId");
 
                     b.ToTable("Alunos");
                 });
@@ -149,6 +157,18 @@ namespace cp2_enterprise.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Veiculos");
+                });
+
+            modelBuilder.Entity("cp2_enterprise.Models.Aluno", b =>
+                {
+                    b.HasOne("cp2_enterprise.Models.AutoEscola", null)
+                        .WithMany("Alunos")
+                        .HasForeignKey("AutoEscolaId");
+                });
+
+            modelBuilder.Entity("cp2_enterprise.Models.AutoEscola", b =>
+                {
+                    b.Navigation("Alunos");
                 });
 #pragma warning restore 612, 618
         }

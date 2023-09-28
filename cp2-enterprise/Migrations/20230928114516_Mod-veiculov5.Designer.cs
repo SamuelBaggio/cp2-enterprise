@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Oracle.EntityFrameworkCore.Metadata;
 using cp2_enterprise.Persistence;
@@ -11,9 +12,11 @@ using cp2_enterprise.Persistence;
 namespace cp2_enterprise.Migrations
 {
     [DbContext(typeof(OracleContext))]
-    partial class OracleContextModelSnapshot : ModelSnapshot
+    [Migration("20230928114516_Mod-veiculov5")]
+    partial class Modveiculov5
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

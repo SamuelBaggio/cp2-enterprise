@@ -21,9 +21,6 @@
             <th>
                 @Html.DisplayNameFor(model => model.Ano)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Categoria)
-            </th>
             <th></th>
         </tr>
     </thead>
@@ -40,9 +37,9 @@
                 @Html.DisplayFor(modelItem => item.Ano)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Detalhes</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Deletar</a>
+                <a asp-action="Edit" asp-route-id="@item.Id" style="background-color: #ffbd03; color: white; padding: 0.5rem 1rem; border-radius: 10px">Editar</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id" style="background-color: #4681F4; color: white; padding: 0.5rem 1rem; border-radius: 10px">Detalhes</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id" style="background-color: #ED0800; color: white; padding: 0.5rem 1rem; border-radius: 10px">Deletar</a>
             </td>
         </tr>
 }

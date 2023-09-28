@@ -10,11 +10,6 @@ namespace cp2_enterprise.Models
         [Required]
         public string? Nome { get; set; }
 
-        public virtual ICollection<Aluno> Alunos { get; set; }
-
-        // relacionamento com Funcionario
-        // relacionamento com Veiculo
-
         [Required]
         public string? CEP { get; set; }
 
@@ -32,7 +27,6 @@ namespace cp2_enterprise.Models
 
         [Required]
         public string? Estado { get; set; }
-
 
     }
 }
