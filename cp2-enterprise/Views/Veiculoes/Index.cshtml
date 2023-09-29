@@ -7,7 +7,7 @@
 <h1>Veículos</h1>
 
 <p>
-    <a asp-action="Create">Cadastrar Veículo</a>
+    <a asp-action="Create" class="btn btn-primary">Cadastrar Veículo</a>
 </p>
 <table class="table">
     <thead>
@@ -37,9 +37,9 @@
                 @Html.DisplayFor(modelItem => item.Ano)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id" style="background-color: #ffbd03; color: white; padding: 0.5rem 1rem; border-radius: 10px">Editar</a> |
-                    <a asp-action="Details" asp-route-id="@item.Id" style="background-color: #4681F4; color: white; padding: 0.5rem 1rem; border-radius: 10px">Detalhes</a> |
-                    <a asp-action="Delete" asp-route-id="@item.Id" style="background-color: #ED0800; color: white; padding: 0.5rem 1rem; border-radius: 10px">Deletar</a>
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning">Editar</a> 
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-primary">Detalhes</a> 
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Deletar</a>
             </td>
         </tr>
 }

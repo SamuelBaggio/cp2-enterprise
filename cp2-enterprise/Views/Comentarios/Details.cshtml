@@ -7,7 +7,7 @@
 <h1>Detalhes</h1>
 
 <div>
-    <h4>Comentarios</h4>
+    <h4>Comentários</h4>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
@@ -29,7 +29,7 @@
             @Html.DisplayFor(model => model.Estrelas)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.AutorizaNome)
+            Autoriza o Nome?
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.AutorizaNome)
@@ -37,6 +37,6 @@
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
-    <a asp-action="Index">Ver todos os comentários</a>
+    <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-warning">Editar</a> 
+    <a asp-action="Index" class="btn btn-primary">Ver todos os comentários</a>
 </div>
